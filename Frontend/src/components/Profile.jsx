@@ -37,6 +37,7 @@ const Profile = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+                    <Button className="text-right" variant="outline"><Pen /></Button>
                     {/* <Button onClick={() => setOpen(true)} className="text-right" variant="outline"><Pen /></Button> */}
                 </div>
                 {/* <div className='my-5'>
