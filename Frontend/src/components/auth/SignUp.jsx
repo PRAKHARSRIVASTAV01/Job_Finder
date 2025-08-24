@@ -9,6 +9,8 @@ import { Link,  useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { USER_API_END_POINT } from '@/utils/constant'
 import { toast } from 'sonner'
+import { setLoading } from '@/redux/authSlice'
+import { Loader2 } from 'lucide-react'
 
 const SignUp = () => {
     const [input, setInput] = useState({
@@ -150,10 +152,10 @@ const SignUp = () => {
                             />
                         </div>
                     </div>
-                    {/* {
+                    {
                         loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Signup</Button>
-                    } */}
-                    <Button type="submit" className="w-full my-4">Signup</Button>
+                    }
+                   
                     <span className='text-sm'>Already have an account? <Link to="/login" className='text-blue-600'>Login</Link></span>
                 </form>
             </div>
