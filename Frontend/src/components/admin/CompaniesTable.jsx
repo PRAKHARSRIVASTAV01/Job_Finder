@@ -5,6 +5,7 @@ import { Edit2, MoreHorizontal } from 'lucide-react'
 import { Avatar, AvatarImage } from '@radix-ui/react-avatar'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { setSearchCompanyByText } from '@/redux/companySlice'
 
 export default function CompaniesTable() {
     
@@ -17,11 +18,11 @@ export default function CompaniesTable() {
             if(!searchCompanyByText){
                 return true
             };
-            return company?.name?.toLowerCase().includes(searchCompanyByText.toLowerCase());
+            return company?.name?.toLowerCase().includes(setSearchCompanyByText.toLowerCase());
 
         });
         setFilterCompany(filteredCompany);
-    },[companies,searchCompanyByText])
+    },[companies,setSearchCompanyByText])
 
     return (
         <Table>
