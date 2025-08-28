@@ -26,37 +26,28 @@ const Job = ({job}) => {
             <div className='flex items-center gap-2 my-2'>
                 <Button className="p-6" variant="outline" size="icon">
                     <Avatar>
-                       {/*  <AvatarImage src={job?.company?.logo} /> */}
-                       <AvatarImage src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" />
-                    </Avatar>
+                        <AvatarImage src={job?.company?.logo} />
+                     </Avatar>
                 </Button>
                 <div>
-                    {/* <h1 className='font-medium text-lg'>{job?.company?.name}</h1> */}
-                    <h1 className='font-medium text-lg'>Google</h1>
+                    <h1 className='font-medium text-lg'>{job?.company?.name}</h1>
                     <p className='text-sm text-gray-500'>India</p>
                 </div>
             </div>
 
             <div>
-                {/* <h1 className='font-bold text-lg my-2'>{job?.title}</h1>
-                <p className='text-sm text-gray-600'>{job?.description}</p> */}
-                <h1 className='font-bold text-lg my-2'>Software Developer</h1>
-                <p className='text-sm text-gray-600'>Proficient in DSA,oops</p>
+                <h1 className='font-bold text-lg my-2'>{job?.title}</h1>
+                <p className='text-sm text-gray-600'>{job?.description}</p>
+                
             </div>
             <div className='flex items-center gap-2 mt-4'>
-                {/* <Badge className={'text-blue-700 font-bold'} variant="ghost">{job?.position} Positions</Badge>
+                 <Badge className={'text-blue-700 font-bold'} variant="ghost">{job?.position} Positions</Badge>
                 <Badge className={'text-[#F83002] font-bold'} variant="ghost">{job?.jobType}</Badge>
-                <Badge className={'text-[#7209b7] font-bold'} variant="ghost">{job?.salary}LPA</Badge> */}
-                <Badge className={'text-blue-700 font-bold'} variant="ghost">19 Positions</Badge>
-                <Badge className={'text-[#F83002] font-bold'} variant="ghost">FullTime</Badge>
-                <Badge className={'text-[#7209b7] font-bold'} variant="ghost">80 LPA</Badge>
+                <Badge className={'text-[#7209b7] font-bold'} variant="ghost">{job?.salary}LPA</Badge> 
+                
             </div>
-            {/* <div className='flex items-center gap-4 mt-4'>
-                <Button onClick={()=> navigate(`/description/${job?._id}`)} variant="outline">Details</Button>
-                <Button className="bg-[#7209b7]">Save For Later</Button>
-            </div> */}
             <div className='flex items-center gap-4 mt-4'>
-                <Button onClick={()=> navigate(`/description/${jobId}`)} variant="outline">Details</Button>
+                <Button onClick={()=> navigate(`/description/${job?._id}`)} variant="outline">Details</Button>
                 <Button className="bg-[#7209b7]">Save For Later</Button>
             </div>
         </div>
