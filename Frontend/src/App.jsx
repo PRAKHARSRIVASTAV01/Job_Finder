@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/shared/Navbar'
 import Login from './components/auth/Login'
-import Signup from './components/auth/Signup'
+import Signup from './components/auth/SignUp'
 import Home from './components/Home'
 import Job from './components/Jobs'
 import Browse from './components/Browse'
